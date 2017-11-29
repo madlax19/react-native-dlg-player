@@ -15,6 +15,44 @@
 #define VERTEX_ATTRIBUTE_POSITION   0
 #define VERTEX_ATTRIBUTE_TEXCOORD   1
 
+#define DLGPlayerVertexShader @" \
+attribute vec4 position; \
+attribute vec2 texcoord; \
+uniform mat4 projection; \
+varying vec2 v_texcoord; \
+\
+void main() { \
+    gl_Position = projection * position; \
+    v_texcoord = texcoord.xy; \
+}"
+
+#define DLGPlayerYUVFragmentShader @" \
+varying highp vec2 v_texcoord; \
+uniform sampler2D s_texture_y; \
+uniform sampler2D s_texture_u; \
+uniform sampler2D s_texture_v; \
+\
+void main() { \
+    highp float y = texture2D(s_texture_y, v_texcoord).r; \
+    highp float u = texture2D(s_texture_u, v_texcoord).r - 0.5; \
+    highp float v = texture2D(s_texture_v, v_texcoord).r - 0.5; \
+    \
+    highp float r = y + 1.402 * v; \
+    highp float g = y - 0.344 * u - 0.714 * v; \
+    highp float b = y + 1.772 * u; \
+    \
+    gl_FragColor = vec4(r, g, b, 1);\
+}"
+
+#define DLGPlayerRGBFragmentShader @" \
+varying highp vec2 v_texcoord; \
+uniform sampler2D s_texture; \
+\
+void main() { \
+    gl_FragColor = texture2D(s_texture, v_texcoord); \
+}"
+
+
 @interface DLGPlayerView () {
     CAEAGLLayer *_eaglLayer;
     EAGLContext *_context;
@@ -148,12 +186,8 @@
     }
     
     // Load shaders
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSString *vertexShaderFile = [bundle pathForResource:@"DLGPlayerVertexShader" ofType:@"glsl"];
-    GLuint vertexShader = [DLGPlayerView loadShader:GL_VERTEX_SHADER withFile:vertexShaderFile];
-    NSString *fragmentShaderResource = _isYUV ? @"DLGPlayerYUVFragmentShader" : @"DLGPlayerRGBFragmentShader";
-    NSString *fragmentShaderFile = [bundle pathForResource:fragmentShaderResource ofType:@"glsl"];
-    GLuint fragmentShader = [DLGPlayerView loadShader:GL_FRAGMENT_SHADER withFile:fragmentShaderFile];
+    GLuint vertexShader = [DLGPlayerView loadShader:GL_VERTEX_SHADER withString:DLGPlayerVertexShader];
+    GLuint fragmentShader = [DLGPlayerView loadShader:GL_FRAGMENT_SHADER withString: _isYUV ? DLGPlayerYUVFragmentShader : DLGPlayerRGBFragmentShader];
     
     // Attach shaders
     glAttachShader(program, vertexShader);

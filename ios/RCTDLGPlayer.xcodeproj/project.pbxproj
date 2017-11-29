@@ -63,9 +63,6 @@
 		8B919EA81FCF2DC5004D13D0 /* DLGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerView.h; sourceTree = "<group>"; };
 		8B919EA91FCF2DC5004D13D0 /* DLGPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerView.m; sourceTree = "<group>"; };
 		8B919EAC1FCF2DC5004D13D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/DLGPlayerStrings.strings; sourceTree = "<group>"; };
-		8B919EAD1FCF2DC5004D13D0 /* DLGPlayerRGBFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerRGBFragmentShader.glsl; sourceTree = "<group>"; };
-		8B919EAE1FCF2DC5004D13D0 /* DLGPlayerVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerVertexShader.glsl; sourceTree = "<group>"; };
-		8B919EAF1FCF2DC5004D13D0 /* DLGPlayerYUVFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerYUVFragmentShader.glsl; sourceTree = "<group>"; };
 		8B919EB01FCF2DC5004D13D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DLGPlayerStrings.strings; sourceTree = "<group>"; };
 		8B919EB11FCF2DC5004D13D0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DLGPlayerStrings.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,9 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				8B919EAB1FCF2DC5004D13D0 /* DLGPlayerStrings.strings */,
-				8B919EAD1FCF2DC5004D13D0 /* DLGPlayerRGBFragmentShader.glsl */,
-				8B919EAE1FCF2DC5004D13D0 /* DLGPlayerVertexShader.glsl */,
-				8B919EAF1FCF2DC5004D13D0 /* DLGPlayerYUVFragmentShader.glsl */,
 			);
 			path = resource;
 			sourceTree = "<group>";

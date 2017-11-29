@@ -22,7 +22,7 @@ RCT_EXPORT_VIEW_PROPERTY(paused, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(seek, float);
 RCT_EXPORT_VIEW_PROPERTY(rate, float);
 RCT_EXPORT_VIEW_PROPERTY(volume, float);
-RCT_EXPORT_VIEW_PROPERTY(snapshotPath, NSString);
+//RCT_EXPORT_VIEW_PROPERTY(snapshotPath, NSString);
 RCT_EXPORT_VIEW_PROPERTY(onPaused, RCTDirectEventBlock);
 RCT_EXPORT_VIEW_PROPERTY(onStopped, RCTDirectEventBlock);
 RCT_EXPORT_VIEW_PROPERTY(onBuffering, RCTDirectEventBlock);

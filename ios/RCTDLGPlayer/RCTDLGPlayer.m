@@ -117,9 +117,9 @@
 }
 
 
-- (void)setFrame:(CGRect)frame {
-    [super setFrame:frame];
-    self.player.playerView.frame = self.bounds;
+- (void)setBounds:(CGRect)bounds {
+    [super setBounds:bounds];
+    self.player.playerView.frame = bounds;
 }
 
 

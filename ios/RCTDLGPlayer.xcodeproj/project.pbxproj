@@ -62,9 +62,6 @@
 		8B919EA51FCF2A8D004D13D0 /* DLGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayer.m; sourceTree = "<group>"; };
 		8B919EA81FCF2DC5004D13D0 /* DLGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerView.h; sourceTree = "<group>"; };
 		8B919EA91FCF2DC5004D13D0 /* DLGPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerView.m; sourceTree = "<group>"; };
-		8B919EAC1FCF2DC5004D13D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/DLGPlayerStrings.strings; sourceTree = "<group>"; };
-		8B919EB01FCF2DC5004D13D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DLGPlayerStrings.strings; sourceTree = "<group>"; };
-		8B919EB11FCF2DC5004D13D0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DLGPlayerStrings.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +109,6 @@
 				8B919E831FCF2A5E004D13D0 /* codec */,
 				8B919E7C1FCF2A5E004D13D0 /* common */,
 				8B919E881FCF2A5E004D13D0 /* frame */,
-				8B919EAA1FCF2DC5004D13D0 /* resource */,
 				8B919EA71FCF2DC5004D13D0 /* view */,
 				8B919EA41FCF2A8D004D13D0 /* DLGPlayer.h */,
 				8B919EA51FCF2A8D004D13D0 /* DLGPlayer.m */,
@@ -165,14 +161,6 @@
 				8B919EA91FCF2DC5004D13D0 /* DLGPlayerView.m */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		8B919EAA1FCF2DC5004D13D0 /* resource */ = {
-			isa = PBXGroup;
-			children = (
-				8B919EAB1FCF2DC5004D13D0 /* DLGPlayerStrings.strings */,
-			);
-			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,19 +238,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8B919EAB1FCF2DC5004D13D0 /* DLGPlayerStrings.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B919EAC1FCF2DC5004D13D0 /* Base */,
-				8B919EB01FCF2DC5004D13D0 /* en */,
-				8B919EB11FCF2DC5004D13D0 /* zh-Hans */,
-			);
-			name = DLGPlayerStrings.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8B919E6E1FCF2812004D13D0 /* Debug */ = {

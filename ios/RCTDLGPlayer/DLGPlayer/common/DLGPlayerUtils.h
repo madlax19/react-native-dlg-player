@@ -12,7 +12,7 @@
 
 + (void)createError:(NSError **)error withDomain:(NSString *)domain andCode:(NSInteger)code andMessage:(NSString *)message;
 + (void)createError:(NSError **)error withDomain:(NSString *)domain andCode:(NSInteger)code andMessage:(NSString *)message andRawError:(NSError *)rawError;
-+ (NSString *)localizedString:(NSString *)name;
+//+ (NSString *)localizedString:(NSString *)name;
 + (NSString *)durationStringFromSeconds:(int)seconds;
 
 @end

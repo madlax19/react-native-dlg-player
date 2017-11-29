@@ -83,7 +83,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeCannotSetAudioCategory
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_CATEGORY"]
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_CATEGORY
                         andRawError:rawError];
         return NO;
     }
@@ -102,7 +102,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeCannotSetAudioActive
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_ACTIVE"]
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_ACTIVE
                         andRawError:rawError];
         return NO;
     }
@@ -112,7 +112,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeNoAudioOuput
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_NO_AUDIO_OUTPUT"]];
+                         andMessage:DLG_PLAYER_STRINGS_NO_AUDIO_OUTPUT];
         return NO;
     }
     
@@ -121,7 +121,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeNoAudioChannel
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_NO_AUDIO_CHANNEL"]];
+                         andMessage:DLG_PLAYER_STRINGS_NO_AUDIO_CHANNEL];
         return NO;
     }
     
@@ -130,7 +130,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeNoAudioSampleRate
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_NO_AUDIO_SAMPLE_RATE"]];
+                         andMessage:DLG_PLAYER_STRINGS_NO_AUDIO_SAMPLE_RATE];
         return NO;
     }
     
@@ -139,7 +139,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeNoAudioVolume
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_NO_AUDIO_VOLUME"]];
+                         andMessage:DLG_PLAYER_STRINGS_NO_AUDIO_VOLUME];
         return NO;
     }
     
@@ -171,7 +171,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeCannotCreateAudioComponent
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_CREATE_AUDIO_UNIT"]
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_CREATE_AUDIO_UNIT
                         andRawError:rawError];
         return NO;
     }
@@ -185,7 +185,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeCannotGetAudioStreamDescription
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_GET_AUDIO_STREAM_DESCRIPTION"]
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_GET_AUDIO_STREAM_DESCRIPTION
                         andRawError:rawError];
         return NO;
     }
@@ -210,7 +210,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeCannotSetAudioRenderCallback
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_RENDER_CALLBACK"]
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_SET_AUDIO_RENDER_CALLBACK
                         andRawError:rawError];
         return NO;
     }
@@ -221,7 +221,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainAudioManager
                             andCode:DLGPlayerErrorCodeCannotInitAudioUnit
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_INIT_AUDIO_UNIT"]
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_INIT_AUDIO_UNIT
                         andRawError:rawError];
         return NO;
     }
@@ -258,7 +258,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
                 [DLGPlayerUtils createError:&error
                                  withDomain:DLGPlayerErrorDomainAudioManager
                                     andCode:DLGPlayerErrorCodeCannotUninitAudioUnit
-                                 andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_UNINIT_AUDIO_UNIT"]
+                                 andMessage:DLG_PLAYER_STRINGS_CANNOT_UNINIT_AUDIO_UNIT
                                 andRawError:rawError];
                 [errs addObject:error];
             }
@@ -273,7 +273,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
                 [DLGPlayerUtils createError:&error
                                  withDomain:DLGPlayerErrorDomainAudioManager
                                     andCode:DLGPlayerErrorCodeCannotDisposeAudioUnit
-                                 andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_DISPOSE_AUDIO_UNIT"]
+                                 andMessage:DLG_PLAYER_STRINGS_CANNOT_DISPOSE_AUDIO_UNIT
                                 andRawError:rawError];
                 [errs addObject:error];
             }
@@ -289,7 +289,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
                 [DLGPlayerUtils createError:&error
                                  withDomain:DLGPlayerErrorDomainAudioManager
                                     andCode:DLGPlayerErrorCodeCannotDeactivateAudio
-                                 andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_DEACTIVATE_AUDIO"]
+                                 andMessage:DLG_PLAYER_STRINGS_CANNOT_DEACTIVATE_AUDIO
                                 andRawError:rawError];
                 [errs addObject:error];
             }
@@ -316,7 +316,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
             [DLGPlayerUtils createError:error
                              withDomain:DLGPlayerErrorDomainAudioManager
                                 andCode:DLGPlayerErrorCodeCannotStartAudioUnit
-                             andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_START_AUDIO_UNIT"]
+                             andMessage:DLG_PLAYER_STRINGS_CANNOT_START_AUDIO_UNIT
                             andRawError:rawError];
         }
     }
@@ -336,7 +336,7 @@ static OSStatus audioUnitRenderCallback(void *inRefCon,
             [DLGPlayerUtils createError:error
                              withDomain:DLGPlayerErrorDomainAudioManager
                                 andCode:DLGPlayerErrorCodeCannotStopAudioUnit
-                             andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_STOP_AUDIO_UNIT"]
+                             andMessage:DLG_PLAYER_STRINGS_CANNOT_STOP_AUDIO_UNIT
                             andRawError:rawError];
         }
     }

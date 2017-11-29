@@ -72,7 +72,7 @@ static int interruptCallback(void *context) {
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainDecoder
                             andCode:DLGPlayerErrorCodeInvalidURL
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_INVALID_URL"]];
+                         andMessage:DLG_PLAYER_STRINGS_INVALID_URL];
         return NO;
     }
     
@@ -87,7 +87,7 @@ static int interruptCallback(void *context) {
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainDecoder
                             andCode:DLGPlayerErrorCodeCannotOpenInput
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_OPEN_INPUT"]];
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_OPEN_INPUT];
         return NO;
     }
     
@@ -102,7 +102,7 @@ static int interruptCallback(void *context) {
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainDecoder
                             andCode:DLGPlayerErrorCodeCannotFindStreamInfo
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_CANNOT_FIND_STREAM_INFO"]];
+                         andMessage:DLG_PLAYER_STRINGS_CANNOT_FIND_STREAM_INFO];
         return NO;
     }
     
@@ -181,7 +181,7 @@ static int interruptCallback(void *context) {
         [DLGPlayerUtils createError:error
                          withDomain:DLGPlayerErrorDomainDecoder
                             andCode:DLGPlayerErrorCodeNoVideoAndAudioStream
-                         andMessage:[DLGPlayerUtils localizedString:@"DLG_PLAYER_STRINGS_NO_VIDEO_AND_AUDIO_STREAM"]];
+                         andMessage:DLG_PLAYER_STRINGS_NO_VIDEO_AND_AUDIO_STREAM];
         return NO;
     }
     

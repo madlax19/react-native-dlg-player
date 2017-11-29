@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B919E6C1FCF2812004D13D0 /* RCTDLGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E6B1FCF2812004D13D0 /* RCTDLGPlayer.m */; };
+		8B919E6D1FCF2812004D13D0 /* RCTDLGPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B919E6A1FCF2812004D13D0 /* RCTDLGPlayer.h */; };
+		8B919E751FCF29BD004D13D0 /* RCTDLGPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E741FCF29BD004D13D0 /* RCTDLGPlayerManager.m */; };
+		8B919E9B1FCF2A5E004D13D0 /* DLGPlayerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E7F1FCF2A5E004D13D0 /* DLGPlayerUtils.m */; };
+		8B919E9D1FCF2A5E004D13D0 /* DLGPlayerAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E851FCF2A5E004D13D0 /* DLGPlayerAudioManager.m */; };
+		8B919E9E1FCF2A5E004D13D0 /* DLGPlayerDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E871FCF2A5E004D13D0 /* DLGPlayerDecoder.m */; };
+		8B919E9F1FCF2A5E004D13D0 /* DLGPlayerAudioFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E8A1FCF2A5E004D13D0 /* DLGPlayerAudioFrame.m */; };
+		8B919EA01FCF2A5E004D13D0 /* DLGPlayerFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E8C1FCF2A5E004D13D0 /* DLGPlayerFrame.m */; };
+		8B919EA11FCF2A5E004D13D0 /* DLGPlayerVideoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E8E1FCF2A5E004D13D0 /* DLGPlayerVideoFrame.m */; };
+		8B919EA21FCF2A5E004D13D0 /* DLGPlayerVideoRGBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E901FCF2A5E004D13D0 /* DLGPlayerVideoRGBFrame.m */; };
+		8B919EA31FCF2A5E004D13D0 /* DLGPlayerVideoYUVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E921FCF2A5E004D13D0 /* DLGPlayerVideoYUVFrame.m */; };
+		8B919EA61FCF2A8D004D13D0 /* DLGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919EA51FCF2A8D004D13D0 /* DLGPlayer.m */; };
+		8B919EB21FCF2DC5004D13D0 /* DLGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919EA91FCF2DC5004D13D0 /* DLGPlayerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B919E651FCF2812004D13D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8B919E6D1FCF2812004D13D0 /* RCTDLGPlayer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B919E671FCF2812004D13D0 /* libRCTDLGPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTDLGPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B919E6A1FCF2812004D13D0 /* RCTDLGPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDLGPlayer.h; sourceTree = "<group>"; };
+		8B919E6B1FCF2812004D13D0 /* RCTDLGPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDLGPlayer.m; sourceTree = "<group>"; };
+		8B919E731FCF29BD004D13D0 /* RCTDLGPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDLGPlayerManager.h; sourceTree = "<group>"; };
+		8B919E741FCF29BD004D13D0 /* RCTDLGPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDLGPlayerManager.m; sourceTree = "<group>"; };
+		8B919E7D1FCF2A5E004D13D0 /* DLGPlayerDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerDef.h; sourceTree = "<group>"; };
+		8B919E7E1FCF2A5E004D13D0 /* DLGPlayerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerUtils.h; sourceTree = "<group>"; };
+		8B919E7F1FCF2A5E004D13D0 /* DLGPlayerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerUtils.m; sourceTree = "<group>"; };
+		8B919E841FCF2A5E004D13D0 /* DLGPlayerAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerAudioManager.h; sourceTree = "<group>"; };
+		8B919E851FCF2A5E004D13D0 /* DLGPlayerAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerAudioManager.m; sourceTree = "<group>"; };
+		8B919E861FCF2A5E004D13D0 /* DLGPlayerDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerDecoder.h; sourceTree = "<group>"; };
+		8B919E871FCF2A5E004D13D0 /* DLGPlayerDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerDecoder.m; sourceTree = "<group>"; };
+		8B919E891FCF2A5E004D13D0 /* DLGPlayerAudioFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerAudioFrame.h; sourceTree = "<group>"; };
+		8B919E8A1FCF2A5E004D13D0 /* DLGPlayerAudioFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerAudioFrame.m; sourceTree = "<group>"; };
+		8B919E8B1FCF2A5E004D13D0 /* DLGPlayerFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerFrame.h; sourceTree = "<group>"; };
+		8B919E8C1FCF2A5E004D13D0 /* DLGPlayerFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerFrame.m; sourceTree = "<group>"; };
+		8B919E8D1FCF2A5E004D13D0 /* DLGPlayerVideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerVideoFrame.h; sourceTree = "<group>"; };
+		8B919E8E1FCF2A5E004D13D0 /* DLGPlayerVideoFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerVideoFrame.m; sourceTree = "<group>"; };
+		8B919E8F1FCF2A5E004D13D0 /* DLGPlayerVideoRGBFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerVideoRGBFrame.h; sourceTree = "<group>"; };
+		8B919E901FCF2A5E004D13D0 /* DLGPlayerVideoRGBFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerVideoRGBFrame.m; sourceTree = "<group>"; };
+		8B919E911FCF2A5E004D13D0 /* DLGPlayerVideoYUVFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerVideoYUVFrame.h; sourceTree = "<group>"; };
+		8B919E921FCF2A5E004D13D0 /* DLGPlayerVideoYUVFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerVideoYUVFrame.m; sourceTree = "<group>"; };
+		8B919EA41FCF2A8D004D13D0 /* DLGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayer.h; sourceTree = "<group>"; };
+		8B919EA51FCF2A8D004D13D0 /* DLGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayer.m; sourceTree = "<group>"; };
+		8B919EA81FCF2DC5004D13D0 /* DLGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGPlayerView.h; sourceTree = "<group>"; };
+		8B919EA91FCF2DC5004D13D0 /* DLGPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGPlayerView.m; sourceTree = "<group>"; };
+		8B919EAC1FCF2DC5004D13D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/DLGPlayerStrings.strings; sourceTree = "<group>"; };
+		8B919EAD1FCF2DC5004D13D0 /* DLGPlayerRGBFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerRGBFragmentShader.glsl; sourceTree = "<group>"; };
+		8B919EAE1FCF2DC5004D13D0 /* DLGPlayerVertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerVertexShader.glsl; sourceTree = "<group>"; };
+		8B919EAF1FCF2DC5004D13D0 /* DLGPlayerYUVFragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLGPlayerYUVFragmentShader.glsl; sourceTree = "<group>"; };
+		8B919EB01FCF2DC5004D13D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DLGPlayerStrings.strings; sourceTree = "<group>"; };
+		8B919EB11FCF2DC5004D13D0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DLGPlayerStrings.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B919E641FCF2812004D13D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B919E5E1FCF2811004D13D0 = {
+			isa = PBXGroup;
+			children = (
+				8B919E691FCF2812004D13D0 /* RCTDLGPlayer */,
+				8B919E681FCF2812004D13D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B919E681FCF2812004D13D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B919E671FCF2812004D13D0 /* libRCTDLGPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B919E691FCF2812004D13D0 /* RCTDLGPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8B919E761FCF29C7004D13D0 /* DLGPlayer */,
+				8B919E731FCF29BD004D13D0 /* RCTDLGPlayerManager.h */,
+				8B919E741FCF29BD004D13D0 /* RCTDLGPlayerManager.m */,
+				8B919E6A1FCF2812004D13D0 /* RCTDLGPlayer.h */,
+				8B919E6B1FCF2812004D13D0 /* RCTDLGPlayer.m */,
+			);
+			path = RCTDLGPlayer;
+			sourceTree = "<group>";
+		};
+		8B919E761FCF29C7004D13D0 /* DLGPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8B919E831FCF2A5E004D13D0 /* codec */,
+				8B919E7C1FCF2A5E004D13D0 /* common */,
+				8B919E881FCF2A5E004D13D0 /* frame */,
+				8B919EAA1FCF2DC5004D13D0 /* resource */,
+				8B919EA71FCF2DC5004D13D0 /* view */,
+				8B919EA41FCF2A8D004D13D0 /* DLGPlayer.h */,
+				8B919EA51FCF2A8D004D13D0 /* DLGPlayer.m */,
+			);
+			path = DLGPlayer;
+			sourceTree = "<group>";
+		};
+		8B919E7C1FCF2A5E004D13D0 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				8B919E7D1FCF2A5E004D13D0 /* DLGPlayerDef.h */,
+				8B919E7E1FCF2A5E004D13D0 /* DLGPlayerUtils.h */,
+				8B919E7F1FCF2A5E004D13D0 /* DLGPlayerUtils.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		8B919E831FCF2A5E004D13D0 /* codec */ = {
+			isa = PBXGroup;
+			children = (
+				8B919E841FCF2A5E004D13D0 /* DLGPlayerAudioManager.h */,
+				8B919E851FCF2A5E004D13D0 /* DLGPlayerAudioManager.m */,
+				8B919E861FCF2A5E004D13D0 /* DLGPlayerDecoder.h */,
+				8B919E871FCF2A5E004D13D0 /* DLGPlayerDecoder.m */,
+			);
+			path = codec;
+			sourceTree = "<group>";
+		};
+		8B919E881FCF2A5E004D13D0 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				8B919E891FCF2A5E004D13D0 /* DLGPlayerAudioFrame.h */,
+				8B919E8A1FCF2A5E004D13D0 /* DLGPlayerAudioFrame.m */,
+				8B919E8B1FCF2A5E004D13D0 /* DLGPlayerFrame.h */,
+				8B919E8C1FCF2A5E004D13D0 /* DLGPlayerFrame.m */,
+				8B919E8D1FCF2A5E004D13D0 /* DLGPlayerVideoFrame.h */,
+				8B919E8E1FCF2A5E004D13D0 /* DLGPlayerVideoFrame.m */,
+				8B919E8F1FCF2A5E004D13D0 /* DLGPlayerVideoRGBFrame.h */,
+				8B919E901FCF2A5E004D13D0 /* DLGPlayerVideoRGBFrame.m */,
+				8B919E911FCF2A5E004D13D0 /* DLGPlayerVideoYUVFrame.h */,
+				8B919E921FCF2A5E004D13D0 /* DLGPlayerVideoYUVFrame.m */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		8B919EA71FCF2DC5004D13D0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8B919EA81FCF2DC5004D13D0 /* DLGPlayerView.h */,
+				8B919EA91FCF2DC5004D13D0 /* DLGPlayerView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8B919EAA1FCF2DC5004D13D0 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				8B919EAB1FCF2DC5004D13D0 /* DLGPlayerStrings.strings */,
+				8B919EAD1FCF2DC5004D13D0 /* DLGPlayerRGBFragmentShader.glsl */,
+				8B919EAE1FCF2DC5004D13D0 /* DLGPlayerVertexShader.glsl */,
+				8B919EAF1FCF2DC5004D13D0 /* DLGPlayerYUVFragmentShader.glsl */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B919E661FCF2812004D13D0 /* RCTDLGPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B919E701FCF2812004D13D0 /* Build configuration list for PBXNativeTarget "RCTDLGPlayer" */;
+			buildPhases = (
+				8B919E631FCF2812004D13D0 /* Sources */,
+				8B919E641FCF2812004D13D0 /* Frameworks */,
+				8B919E651FCF2812004D13D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTDLGPlayer;
+			productName = RCTDLGPlayer;
+			productReference = 8B919E671FCF2812004D13D0 /* libRCTDLGPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B919E5F1FCF2811004D13D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = len;
+				TargetAttributes = {
+					8B919E661FCF2812004D13D0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8B919E621FCF2811004D13D0 /* Build configuration list for PBXProject "RCTDLGPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 8B919E5E1FCF2811004D13D0;
+			productRefGroup = 8B919E681FCF2812004D13D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B919E661FCF2812004D13D0 /* RCTDLGPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B919E631FCF2812004D13D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B919EA31FCF2A5E004D13D0 /* DLGPlayerVideoYUVFrame.m in Sources */,
+				8B919E9B1FCF2A5E004D13D0 /* DLGPlayerUtils.m in Sources */,
+				8B919EA61FCF2A8D004D13D0 /* DLGPlayer.m in Sources */,
+				8B919EA01FCF2A5E004D13D0 /* DLGPlayerFrame.m in Sources */,
+				8B919E751FCF29BD004D13D0 /* RCTDLGPlayerManager.m in Sources */,
+				8B919EB21FCF2DC5004D13D0 /* DLGPlayerView.m in Sources */,
+				8B919EA21FCF2A5E004D13D0 /* DLGPlayerVideoRGBFrame.m in Sources */,
+				8B919E9E1FCF2A5E004D13D0 /* DLGPlayerDecoder.m in Sources */,
+				8B919E9F1FCF2A5E004D13D0 /* DLGPlayerAudioFrame.m in Sources */,
+				8B919E6C1FCF2812004D13D0 /* RCTDLGPlayer.m in Sources */,
+				8B919EA11FCF2A5E004D13D0 /* DLGPlayerVideoFrame.m in Sources */,
+				8B919E9D1FCF2A5E004D13D0 /* DLGPlayerAudioManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B919EAB1FCF2DC5004D13D0 /* DLGPlayerStrings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B919EAC1FCF2DC5004D13D0 /* Base */,
+				8B919EB01FCF2DC5004D13D0 /* en */,
+				8B919EB11FCF2DC5004D13D0 /* zh-Hans */,
+			);
+			name = DLGPlayerStrings.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B919E6E1FCF2812004D13D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B919E6F1FCF2812004D13D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B919E711FCF2812004D13D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(inherited)",
+					"\"$(SRCROOT)/FFmpeg-iOS/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FFmpeg-iOS/lib";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B919E721FCF2812004D13D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(inherited)",
+					"\"$(SRCROOT)/FFmpeg-iOS/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/FFmpeg-iOS/lib";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B919E621FCF2811004D13D0 /* Build configuration list for PBXProject "RCTDLGPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B919E6E1FCF2812004D13D0 /* Debug */,
+				8B919E6F1FCF2812004D13D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B919E701FCF2812004D13D0 /* Build configuration list for PBXNativeTarget "RCTDLGPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B919E711FCF2812004D13D0 /* Debug */,
+				8B919E721FCF2812004D13D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B919E5F1FCF2811004D13D0 /* Project object */;
+}

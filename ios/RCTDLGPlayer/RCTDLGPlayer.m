@@ -127,13 +127,14 @@
     if (!_player) {
         _player = [[DLGPlayer alloc] init];
         _player.playerView.frame = self.bounds;
+        __weak RCTDLGPlayer *weakSelf = self;
         [_player setOnBufferingChanged:^(BOOL buffering) {
             if (self.onBuffering && buffering) {
-                self.onBuffering(@{ @"target": self.reactTag });
+                weakSelf.onBuffering(@{ @"target": weakSelf.reactTag });
             }
         }];
         [_player setOnPositionChanged:^(double position) {
-            [self updateVideoProgress];
+            [weakSelf updateVideoProgress];
         }];
         [self addSubview:_player.playerView];
     }
@@ -195,7 +196,8 @@
 - (void)updateVideoProgress {
     double currentTime   = ceil(self.player.position);
     double remainingTime = ceil(self.player.duration) - currentTime;
-    double duration      = self.player.duration;
+    double duration      = ceil(self.player.duration);
+    double position = round(self.player.position) / round(self.player.duration);
     
     if( currentTime >= 0 && currentTime < duration) {
         if (self.onProgress) {
@@ -203,7 +205,7 @@
                                @"currentTime": [NSNumber numberWithInt:currentTime],
                                @"remainingTime": [NSNumber numberWithInt:remainingTime],
                                @"duration":[NSNumber numberWithInt:duration],
-                               @"position":[NSNumber numberWithFloat:self.player.position] });
+                               @"position":[NSNumber numberWithFloat:position] });
         }
     }
 }
@@ -212,7 +214,8 @@
 - (void)setSeek:(float)pos {
     if(self.player.opened) {
         if(pos >= 0 && pos <= 1.0) {
-            [self.player setPosition:pos];
+            double position = self.player.duration * pos;
+            [self.player setPosition:position];
         }
     }
 }

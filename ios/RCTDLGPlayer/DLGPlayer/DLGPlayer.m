@@ -138,7 +138,7 @@
             _metadata = _decoder.metadata;
             _opening = NO;
             self.buffering = NO;
-            _playing = NO;
+            self.playing = NO;
             _bufferedDuration = 0;
             self.mediaPosition = 0;
             _mediaSyncTime = 0;
@@ -181,9 +181,9 @@
 }
 
 - (void)play {
-    if (!_opened || _playing) return;
+    if (!_opened || self.playing) return;
     
-    _playing = YES;
+    self.playing = YES;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self render];
         [self startFrameReaderThread];
@@ -195,11 +195,15 @@
 }
 
 - (void)pause {
-    _playing = NO;
+    self.playing = NO;
     NSError *error = nil;
     if (![_audio pause:&error]) {
         [self handleError:error];
     }
+}
+
+- (void)setPlaying:(BOOL)playing {
+    _playing = playing;
 }
 
 - (void)startFrameReaderThread {
@@ -211,7 +215,7 @@
 
 - (void)runFrameReader {
     @autoreleasepool {
-        while (_playing) {
+        while (self.playing) {
             [self readFrame];
             if (_requestSeek) {
                 [self seekPositionInFrameReader];
@@ -231,7 +235,7 @@
     double tempDuration = 0;
     dispatch_time_t t = dispatch_time(DISPATCH_TIME_NOW, 0.02 * NSEC_PER_SEC);
     
-    while (_playing && !_decoder.isEOF && !_requestSeek
+    while (self.playing && !_decoder.isEOF && !_requestSeek
            && (_bufferedDuration + tempDuration) < _maxBufferDuration) {
         @autoreleasepool {
             NSArray *fs = [_decoder readFrames];
@@ -331,7 +335,7 @@
 }
 
 - (void)render {
-    if (!_playing) return;
+    if (!self.playing) return;
     BOOL eof = _decoder.isEOF;
     BOOL noframes = ((_decoder.hasVideo && _vframes.count <= 0) ||
                      (_decoder.hasAudio && _aframes.count <= 0));
@@ -339,6 +343,7 @@
     // Check if reach the end and play all frames.
     if (noframes && eof) {
         [self pause];
+        [_decoder seek:0.0];
         [[NSNotificationCenter defaultCenter] postNotificationName:DLGPlayerNotificationEOF object:self];
         return;
     }
@@ -416,7 +421,7 @@
  * For audioUnitRenderCallback, (DLGPlayerAudioManagerFrameReaderBlock)readFrameBlock
  */
 - (void)readAudioFrame:(float *)data frames:(UInt32)frames channels:(UInt32)channels {
-    if (!_playing) return;
+    if (!self.playing) return;
     while(frames > 0) {
         @autoreleasepool {
             if (_playingAudioFrame == nil) {
@@ -492,7 +497,7 @@
 }
 
 - (double)position {
-    return self.mediaPosition;
+    return _mediaPosition;
 }
 
 - (void)setMediaPosition:(double)mediaPosition {

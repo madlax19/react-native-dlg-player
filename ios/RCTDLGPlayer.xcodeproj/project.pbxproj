@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B369E231FD143AE00F1286C /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B369E1C1FD143AD00F1286C /* libavfilter.a */; };
+		8B369E241FD143AE00F1286C /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B369E1D1FD143AD00F1286C /* libswresample.a */; };
+		8B369E251FD143AE00F1286C /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B369E1E1FD143AE00F1286C /* libavutil.a */; };
+		8B369E261FD143AE00F1286C /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B369E1F1FD143AE00F1286C /* libavdevice.a */; };
+		8B369E271FD143AE00F1286C /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B369E201FD143AE00F1286C /* libavformat.a */; };
+		8B369E281FD143AE00F1286C /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B369E211FD143AE00F1286C /* libswscale.a */; };
+		8B369E291FD143AE00F1286C /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B369E221FD143AE00F1286C /* libavcodec.a */; };
 		8B919E6C1FCF2812004D13D0 /* RCTDLGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E6B1FCF2812004D13D0 /* RCTDLGPlayer.m */; };
 		8B919E6D1FCF2812004D13D0 /* RCTDLGPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B919E6A1FCF2812004D13D0 /* RCTDLGPlayer.h */; };
 		8B919E751FCF29BD004D13D0 /* RCTDLGPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B919E741FCF29BD004D13D0 /* RCTDLGPlayerManager.m */; };
@@ -36,6 +43,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B369E1C1FD143AD00F1286C /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "FFmpeg-iOS/lib/libavfilter.a"; sourceTree = "<group>"; };
+		8B369E1D1FD143AD00F1286C /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "FFmpeg-iOS/lib/libswresample.a"; sourceTree = "<group>"; };
+		8B369E1E1FD143AE00F1286C /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "FFmpeg-iOS/lib/libavutil.a"; sourceTree = "<group>"; };
+		8B369E1F1FD143AE00F1286C /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "FFmpeg-iOS/lib/libavdevice.a"; sourceTree = "<group>"; };
+		8B369E201FD143AE00F1286C /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "FFmpeg-iOS/lib/libavformat.a"; sourceTree = "<group>"; };
+		8B369E211FD143AE00F1286C /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "FFmpeg-iOS/lib/libswscale.a"; sourceTree = "<group>"; };
+		8B369E221FD143AE00F1286C /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "FFmpeg-iOS/lib/libavcodec.a"; sourceTree = "<group>"; };
 		8B919E671FCF2812004D13D0 /* libRCTDLGPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTDLGPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B919E6A1FCF2812004D13D0 /* RCTDLGPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDLGPlayer.h; sourceTree = "<group>"; };
 		8B919E6B1FCF2812004D13D0 /* RCTDLGPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDLGPlayer.m; sourceTree = "<group>"; };
@@ -69,17 +83,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B369E231FD143AE00F1286C /* libavfilter.a in Frameworks */,
+				8B369E241FD143AE00F1286C /* libswresample.a in Frameworks */,
+				8B369E251FD143AE00F1286C /* libavutil.a in Frameworks */,
+				8B369E261FD143AE00F1286C /* libavdevice.a in Frameworks */,
+				8B369E271FD143AE00F1286C /* libavformat.a in Frameworks */,
+				8B369E281FD143AE00F1286C /* libswscale.a in Frameworks */,
+				8B369E291FD143AE00F1286C /* libavcodec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B369E1B1FD143AD00F1286C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B369E221FD143AE00F1286C /* libavcodec.a */,
+				8B369E1F1FD143AE00F1286C /* libavdevice.a */,
+				8B369E1C1FD143AD00F1286C /* libavfilter.a */,
+				8B369E201FD143AE00F1286C /* libavformat.a */,
+				8B369E1E1FD143AE00F1286C /* libavutil.a */,
+				8B369E1D1FD143AD00F1286C /* libswresample.a */,
+				8B369E211FD143AE00F1286C /* libswscale.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B919E5E1FCF2811004D13D0 = {
 			isa = PBXGroup;
 			children = (
 				8B919E691FCF2812004D13D0 /* RCTDLGPlayer */,
 				8B919E681FCF2812004D13D0 /* Products */,
+				8B369E1B1FD143AD00F1286C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
